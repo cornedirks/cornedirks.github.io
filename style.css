@@ -132,7 +132,7 @@ main {
 }
 
 .main_right i {
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .fas {
@@ -180,5 +180,11 @@ main {
 .icon_text {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  margin-left: 15px;
+  margin-left: 20px;
+}
+
+.icon_text1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-left: 22px;
 }
