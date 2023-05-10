@@ -135,6 +135,10 @@ main {
   line-height: 1.7em;
 }
 
+.main_right h2 {
+  margin-top: 0%;
+}
+
 .fas {
   color: #de6e23;
 }
@@ -187,4 +191,17 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin-left: 22px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: x-small;
+  align-items: center;
 }
