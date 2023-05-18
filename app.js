@@ -1,18 +1,18 @@
-gsap.to(".main_left", {
+gsap.from(".main_left", {
   y: 10,
   opacity: 1,
   duration: 1,
   smooth: 1,
 });
 
-gsap.to(".main_line", {
+gsap.from(".main_line", {
   y: 10,
   opacity: 1,
   duration: 1,
   smooth: 1,
 });
 
-gsap.to(".main_right", {
+gsap.from(".main_right", {
   y: 10,
   opacity: 1,
   duration: 1,
@@ -25,3 +25,10 @@ gsap.from("header h1", {
   duration: 1,
   smooth: 1,
 });
+
+// gsap.from(".extra_socials_cards", {
+//   y: 10,
+//   opacity: 1,
+//   duration: 1,
+//   smooth: 1,
+// });
