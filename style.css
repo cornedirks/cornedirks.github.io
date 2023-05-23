@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4e4e4e;
+  background: #de6e23;
   border-radius: 100vh;
 }
 
@@ -167,6 +167,7 @@ main {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  border: solid #de6e23;
 }
 
 .socials_section {
