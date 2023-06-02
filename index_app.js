@@ -47,3 +47,31 @@ openModal.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.close();
 });
+
+LottieInteractivity.create({
+  player: "#firstLottie",
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0, 100],
+      type: "seek",
+      pin: true,
+      frames: [0, 4000],
+    },
+  ],
+});
+
+VANTA.WAVES({
+  el: "#header_background",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  color: 0x141414,
+  shininess: 20.0,
+  waveHeight: 23.5,
+  waveSpeed: 0.5,
+});
