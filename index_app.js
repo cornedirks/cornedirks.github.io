@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.from(".main_left", {
   x: 20,
   opacity: 1,
@@ -28,13 +30,32 @@ gsap.from("header h1", {
   smooth: 1,
 });
 
-// gsap.from(".extra_socials_cards", {
-//   y: -10,
-//   scale: 0.9,
-//   opacity: 0,
-//   duration: 1,
-//   smooth: 1,
-// });
+const commission_ani = gsap.fromTo(".commission_status", { opacity: 0, y: "100%" }, { opacity: 1, y: 0 });
+
+ScrollTrigger.create({
+  trigger: "#commission_status_section",
+  start: "top 80%",
+  onEnter: () => {
+    commission_ani.play();
+  },
+  onLeaveBack: () => {
+    commission_ani.reverse();
+  },
+});
+
+const why_section_ani = gsap.fromTo(".why_section_card", { opacity: 0, y: "100%" }, { opacity: 1, y: 0 });
+
+ScrollTrigger.create({
+  trigger: "#why_section",
+  start: "top 80%",
+  onEnter: () => {
+    why_section_ani.play();
+  },
+  onLeaveBack: () => {
+    why_section_ani.reverse();
+  },
+});
+
 
 const modal = document.querySelector(".commission_closed_modal");
 const openModal = document.querySelector(".read_more_btn_commission_closed");
@@ -59,19 +80,4 @@ LottieInteractivity.create({
       frames: [0, 4000],
     },
   ],
-});
-
-VANTA.WAVES({
-  el: "#header_background",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.0,
-  minWidth: 200.0,
-  scale: 1.0,
-  scaleMobile: 1.0,
-  color: 0x141414,
-  shininess: 20.0,
-  waveHeight: 23.5,
-  waveSpeed: 0.5,
 });

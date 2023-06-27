@@ -118,8 +118,8 @@ nav .nav_socials {
 
 nav .socials_icons {
   display: flex;
-  justify-content: space-between;
-  width: 140px;
+  justify-content: space-around;
+  width: 120px;
 }
 
 nav .socials_icons a {
@@ -317,6 +317,16 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin-left: 22px;
+}
+
+.icon_text2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-left: 16px;
+}
+
+.fa-discord{
+  
 }
 
 footer {
@@ -602,7 +612,7 @@ footer p {
 
 /* Media quaries */
 
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   main {
     flex-direction: column;
   }
@@ -636,6 +646,8 @@ footer p {
     height: 165px;
     margin: 0px;
   }
+
+  
 
   .extra_socials_cards {
     margin-top: 0px;
