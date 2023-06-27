@@ -45,6 +45,13 @@ a {
   color: var(--main-text-color);
 }
 
+.accent_color{
+  color: var(--main-accent-color);
+}
+
+
+/* ^^ CSS Standards ^^ */
+
 dialog {
   margin: auto;
 }
@@ -53,8 +60,6 @@ dialog::backdrop {
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.45);
 }
-
-/* ^^ CSS Standards ^^ */
 
 nav {
   position: sticky;
@@ -582,6 +587,79 @@ footer p {
     transform: scale(2);
     opacity: 0;
   }
+}
+
+
+#big_text_container{
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+
+#big_text_container p{
+  font-size: 20em;
+  font-weight: 600;
+  white-space: nowrap;
+  }
+
+#more_about_me_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+.more_about_me_long{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 1100px;
+  text-align: end;
+}
+
+.more_about_me_picture{
+  height: 350px;
+  width: 550px;
+  border-radius: 2vh;
+  overflow: hidden;
+}
+
+.more_about_me_info{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.more_about_me_info h2{
+  font-size: xx-large;
+}
+
+.more_about_me_hobbies{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 1100px;
+}
+
+.skills_container h2{
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+.app_logos{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  background-color: var(--lighter-background-color);
+  padding: 20px;
+  border-radius: 2vh;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app_logos img{
+  height: 40px;
 }
 
 #why_section {
