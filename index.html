@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" type="image/x-icon" href="/images/logo's/favicon.ico">
 
-
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script defer src="index_app.js"></script>
 
 </head>
@@ -25,12 +22,11 @@
     <div class="nav_links">
         <a href="projects_page.html">Projects</a>
         <a href="./#big_text_container">About me</a>
-        <a href="./#why_section">Why?</a>
     </div>
 
     <div class="nav_socials">
         <div class="socials_icons">
-            <!-- <a target="_blank" rel="noopener" href="https://discordid.netlify.app/?id=112647635684302848"><i class="fab fa-discord"></i></a> -->
+            <a target="_blank" rel="noopener" href="https://discordid.netlify.app/?id=112647635684302848"><i class="fab fa-discord"></i></a>
             <a target="_blank" rel="noopener" href="https://steamcommunity.com/id/CornDoggyy/"><i class="fab fa-steam"></i></a>
             <a target="_blank" rel="noopener" href="https://open.spotify.com/user/1159399622"><i class="fab fa-spotify"></i></a>
             <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCNQpZxF9WC6EO6RxjLaZMBA"><i class="fab fa-youtube"></i></a>
@@ -40,7 +36,6 @@
 
   <section id="hero_section">
     <div id="header_background"></div>
-    <!-- <lottie-player id="firstLottie" src="https://lottie.host/aa539ab0-e6de-4958-a323-c9d32c2dce6c/KDVLIK2cLD.json"></lottie-player> -->
     <header>
         <h1>
             WELCOME!
@@ -62,7 +57,6 @@
         <i class="fas fa-user"><span class="icon_text1">Male • 23 • NL</span></i>
         <i class="fas fa-user-graduate"><span class="icon_text1">Undergrad designer student</span></i>
         <i class="fas fa-icons"><span class="icon_text">Gaming • Tech • Anime • Design</span></i>
-        <i class="fab fa-discord"><span class="icon_text2">corndoggy.</span></i>
     <div>
     <a href="./#big_text_container"><button class="read_more_btn">
         Read more <i class="fas fa-angle-right"></i>
@@ -200,22 +194,6 @@
 
 </section>
 
-
-
-    <section id="why_section">
-        <div class="why_section_card">
-        <h2>"Why?"</h2>
-        <p>Why did I make this website you ask? I honestly wanted to make a <span> <a target="_blank" rel="noopener" href="https://linktr.ee/"> linktree </a> </span> or <span> <a target="_blank" rel="noopener" href="https://carrd.co/"> carrd </a> </span> clone, but with my own code. 
-            I'm still learning how to code, so I saw this as a fun, little, side project. <br>
-            A lot of people ask me if it's a portfolio website but... No, not quite. I can show some of my work, but that won't be the main purpose of it.
-            <br> This is just a sum-up of me, what I like, and do on the interwebs. 
-        </p>
-    </div>
-    </section>
-
-    
-
-
     <footer>
     <p>Copyright &copy; 2023 Corné </p>
     <p>Made with precision and soul. &#129505;</p>
@@ -226,7 +204,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-<script>
+<script id="interactive_bg">
     VANTA.WAVES({
   el: "#header_background",
   mouseControls: true,
