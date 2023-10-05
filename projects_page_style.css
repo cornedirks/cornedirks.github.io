@@ -198,6 +198,11 @@ header img {
   transition: 500ms cubic-bezier(0.06, 0.69, 0.2, 0.98);
 }
 
+.discord_banners_thumbnail {
+  object-fit: fill;
+  scale: 120%;
+}
+
 .project_information {
   background: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
