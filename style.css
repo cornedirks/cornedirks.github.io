@@ -597,12 +597,12 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .more_about_me_long {
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   margin-bottom: 50px;
   text-align: end;
 }
@@ -621,6 +621,7 @@ footer p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .more_about_me_info h2 {
@@ -631,6 +632,7 @@ footer p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 50px;
 }
 
 .skills_container {
@@ -665,6 +667,8 @@ footer p {
 @media all and (max-width: 1200px) {
   #more_about_me_container {
     width: 100%;
+    overflow: hidden;
+    margin-top: 3em;
   }
 
   #big_text_container p {
@@ -676,6 +680,8 @@ footer p {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    gap: 0px;
+    margin-bottom: 5em;
   }
   .more_about_me_info {
     text-align: left;
@@ -687,6 +693,7 @@ footer p {
     flex-direction: column-reverse;
     align-items: center;
     max-width: 100%;
+    gap: 0px;
   }
 }
 
@@ -764,6 +771,10 @@ footer p {
     padding: 20px;
   }
 
+  .more_about_me_info {
+    padding: 30px;
+  }
+
   footer {
     flex-direction: column;
     justify-content: space-evenly;
@@ -787,5 +798,11 @@ footer p {
 
   #header_background {
     height: 160vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .more_about_me_picture {
+    border-radius: 0vh;
   }
 }
