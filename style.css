@@ -45,7 +45,7 @@ a {
   color: var(--main-text-color);
 }
 
-.accent_color{
+.accent_color {
   color: var(--main-accent-color);
 }
 
@@ -72,6 +72,7 @@ nav {
   z-index: 100;
   width: 100%;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 nav .nav_home {
@@ -580,66 +581,72 @@ footer p {
   }
 }
 
-
-#big_text_container{
-overflow: hidden;
-display: flex;
-justify-content: center;
+#big_text_container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-#big_text_container p{
+#big_text_container p {
   font-size: 20em;
   font-weight: 600;
   white-space: nowrap;
-  }
+}
 
-#more_about_me_container{
+#more_about_me_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}  
+  width: 100%;
+}
 
-.more_about_me_long{
+.more_about_me_long {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  width: 1100px;
   text-align: end;
 }
 
-.more_about_me_picture{
-  height: 350px;
+.more_about_me_picture {
+  max-height: 350px;
   width: 550px;
+  max-width: 100%;
   border-radius: 2vh;
   overflow: hidden;
 }
 
-.more_about_me_info{
+.more_about_me_info {
   width: 500px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.more_about_me_info h2{
+.more_about_me_info h2 {
   font-size: xx-large;
 }
 
-.more_about_me_hobbies{
+.more_about_me_hobbies {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  width: 1100px;
 }
 
-.skills_container h2{
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.skills_container h2 {
   font-size: xx-large;
   text-align: center;
   margin-bottom: 5px;
   margin-top: 50px;
 }
 
-.app_logos{
+.app_logos {
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -649,37 +656,39 @@ justify-content: center;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.app_logos img{
+.app_logos img {
   height: 40px;
 }
 
-#why_section {
-  display: flex;
-  justify-content: center;
-  margin-top: 13vh;
-  margin-bottom: 13vh;
-  padding: 2.5em;
-}
-
-.why_section_card {
-  background-color: var(--lighter-background-color);
-  padding: 2.5em;
-  width: 1200px;
-  border-radius: 2vh;
-  line-height: 30px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-}
-.why_section_card a {
-  text-decoration: none;
-  color: var(--main-accent-color);
-}
-
-.why_section_card h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.7em;
-}
-
 /* Media quaries */
+
+@media all and (max-width: 1200px) {
+  #more_about_me_container {
+    width: 100%;
+  }
+
+  #big_text_container p {
+    font-size: 4.5em;
+  }
+
+  .more_about_me_long {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .more_about_me_info {
+    text-align: left;
+    margin-top: 1em;
+  }
+
+  .more_about_me_hobbies {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 100%;
+  }
+}
 
 @media all and (max-width: 800px) {
   main {
@@ -722,9 +731,8 @@ justify-content: center;
     flex-wrap: wrap;
   }
 
-  #header_background{
+  #header_background {
     display: none;
-
   }
 
   #commission_status_section {
@@ -735,15 +743,31 @@ justify-content: center;
     text-align: center;
   }
 
+  .social_card:hover {
+    width: 100px;
+  }
+
+  .social_card:hover .social_card_logos {
+    transform: none;
+  }
+
   .why_section_card {
     width: 350px;
   }
 
-  footer{
-  flex-direction: column;
-  justify-content: space-evenly;
+  .app_logos {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
   }
 
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-height: 865px) {
