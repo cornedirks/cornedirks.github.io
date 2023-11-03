@@ -188,3 +188,8 @@ footer p {
   position: absolute;
   object-fit: cover;
 }
+
+.small_note{
+  font-size: x-small;
+  margin-top: 2em;
+}
