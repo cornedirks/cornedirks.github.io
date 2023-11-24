@@ -178,7 +178,7 @@ header img {
   flex-wrap: wrap;
 }
 
-.project_container {
+#project_container {
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -190,7 +190,7 @@ header img {
   position: relative;
 }
 
-.project_container img {
+#project_container img {
   object-fit: cover;
   max-height: 275px;
   z-index: 0;
@@ -215,11 +215,11 @@ header img {
   transition: 500ms cubic-bezier(0.06, 0.69, 0.2, 0.98);
 }
 
-.project_container:hover .project_information {
+#project_container:hover .project_information {
   height: 110px;
 }
 
-.project_container:hover img {
+#project_container:hover img {
   transform: scale(1.1);
 }
 
@@ -273,6 +273,30 @@ header img {
   margin-right: 10px;
 }
 
+.dot_webdesign {
+  width: 10px;
+  height: 10px;
+  background-color: #00ffff;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.dot_schoolproject {
+  width: 10px;
+  height: 10px;
+  background-color: #1ddb16;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.dot_client {
+  width: 10px;
+  height: 10px;
+  background-color: #db9d16;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
 .behance_notif_container {
   display: flex;
   flex-direction: column;
@@ -300,11 +324,6 @@ header img {
   background-color: var(--lighter-background-color);
   position: absolute;
   top: 65%;
-}
-
-.projects_btn {
-  position: absolute;
-  top: 74%;
 }
 
 .projects_btn i {
@@ -339,3 +358,9 @@ header img {
   color: var(--main-text-color);
   transform: translateX(50%);
 }
+
+.wikkelhouse_thumbnail img{
+  position: absolute;
+  right: -4%;
+}
+
