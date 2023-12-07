@@ -208,7 +208,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   gap: 50px;
 }
 
@@ -342,6 +342,15 @@ footer {
 footer p {
   font-size: small;
   text-align: center;
+}
+
+.socials_text{
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: large;
+  font-weight: 700;
 }
 
 #extra_socials_section {
