@@ -46,7 +46,6 @@ gsap.from(".slogan", {
     end: "bottom 90%",
     scrub: 1.5,
     smooth: 1,
-    markers: true,
   },
 });
 
