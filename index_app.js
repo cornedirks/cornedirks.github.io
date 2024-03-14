@@ -1,11 +1,19 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".main_left", {
-  x: 20,
-  opacity: 1,
+gsap.from(".my_name_corne", {
+  y: 20,
   duration: 1,
   smooth: 1,
   opacity: 0,
+  filter: "blur(5px)",
+});
+
+gsap.from(".my_name_dirks", {
+  y: 20,
+  duration: 1,
+  smooth: 1,
+  opacity: 0,
+  filter: "blur(5px)",
 });
 
 gsap.from(".main_line", {
@@ -30,9 +38,11 @@ gsap.from("header h1", {
   smooth: 1,
 });
 
-const commission_ani = gsap.fromTo(".commission_status", 
-{ opacity: 0, y: "100%" }, 
-{ opacity: 1, y: 0, paused: true });
+const commission_ani = gsap.fromTo(
+  ".commission_status",
+  { opacity: 0, y: "100%" },
+  { opacity: 1, y: 0, paused: true }
+);
 
 ScrollTrigger.create({
   trigger: "#commission_status_section",
@@ -50,7 +60,7 @@ gsap.from(".big_text_about_me", {
   opacity: 1,
   scrollTrigger: {
     trigger: "#big_text_container",
-    start: "top 80%", 
+    start: "top 80%",
     end: "bottom 50%",
     scrub: 3,
     smooth: 1,
@@ -89,7 +99,6 @@ ScrollTrigger.create({
   onLeaveBack: () => {
     hobbies_ani.reverse();
   },
-
 });
 
 const skills_ani = gsap.fromTo(
@@ -109,10 +118,11 @@ ScrollTrigger.create({
   },
 });
 
-
-const why_section_ani = gsap.fromTo(".why_section_card", 
-{ opacity: 0, y: "100%" }, 
-{ opacity: 1, y: 0, paused: true });
+const why_section_ani = gsap.fromTo(
+  ".why_section_card",
+  { opacity: 0, y: "100%" },
+  { opacity: 1, y: 0, paused: true }
+);
 
 ScrollTrigger.create({
   trigger: "#why_section",
