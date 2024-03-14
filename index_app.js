@@ -16,6 +16,40 @@ gsap.from(".my_name_dirks", {
   filter: "blur(5px)",
 });
 
+gsap.to(".my_name_corne", {
+  x: "1000",
+  scrollTrigger: {
+    trigger: "#hero_section",
+    start: "top top",
+    end: "bottom 20%",
+    scrub: 1.5,
+    smooth: 1,
+  },
+});
+
+gsap.to(".my_name_dirks", {
+  x: "-1000",
+  scrollTrigger: {
+    trigger: "#hero_section",
+    start: "top top",
+    end: "bottom 20%",
+    scrub: 1.5,
+    smooth: 1,
+  },
+});
+
+gsap.from(".slogan", {
+  filter: "blur(10px)",
+  scrollTrigger: {
+    trigger: "#slogan_section",
+    start: "top 50%",
+    end: "bottom 90%",
+    scrub: 1.5,
+    smooth: 1,
+    markers: true,
+  },
+});
+
 gsap.from(".main_line", {
   y: -20,
   opacity: 1,
@@ -145,17 +179,4 @@ openModal.addEventListener("click", () => {
 
 closeModal.addEventListener("click", () => {
   modal.close();
-});
-
-LottieInteractivity.create({
-  player: "#firstLottie",
-  mode: "scroll",
-  actions: [
-    {
-      visibility: [0, 100],
-      type: "seek",
-      pin: true,
-      frames: [0, 4000],
-    },
-  ],
 });

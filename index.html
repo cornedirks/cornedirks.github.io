@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="icon" type="image/x-icon" href="/images/logo's/favicon.ico" />
-    <link rel="stylesheet" href="path/to/atropos.css" />
+
 
   </head>
   <body>
@@ -25,12 +25,6 @@
 
       <div class="nav_socials">
         <div class="socials_icons">
-          <!-- <a
-            target="_blank"
-            rel="noopener"
-            href="https://discordid.netlify.app/?id=112647635684302848"
-            ><i class="fab fa-discord"></i
-          ></a> -->
           <a
             target="_blank"
             rel="noopener"
@@ -55,21 +49,16 @@
 
     <section id="hero_section">
       
-<div class="atropos my-atropos">
-
-  <div class="atropos-scale">
-
-    <div class="atropos-rotate">
-      <div class="atropos-inner">
-        <div class="my_name">
+      <div class="my_name">
         <p class="my_name_corne">CORNÉ</p>
         <p class="my_name_dirks">DIRKS</p>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+    </section>
+    <section id="slogan_section">
+      <div class="slogan">
+        <p>"Crafting pixels with<br><span class="accent_color">precision</span> and <span class="accent_color">soul</span>."</p>
+      </div>
     </section>
 
     <section class="projects_section">
@@ -204,15 +193,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="index_app.js"></script>
-    <script>
-import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs';
+    <script src="https://unpkg.com/custom-cursor@latest/dist/cursor.min.js"></script>
 
-const myAtropos = Atropos({
-  el: '.my-atropos',
-  activeOffset: 40,
-  shadowScale: 1.05,
-});
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      new window['Cursor']({
+        targets: ['p'], 
+      })
+      })
     </script>
+    
+    <script src="index_app.js"></script>
   </body>
 </html>

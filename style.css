@@ -47,6 +47,7 @@ a {
 
 .accent_color {
   color: var(--main-accent-color);
+  font-weight: bolder;
 }
 
 /* ^^ CSS Standards ^^ */
@@ -147,11 +148,12 @@ span {
 }
 
 #hero_section {
-  height: 100vh;
+  height: 80vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 /* #header_background {
@@ -207,7 +209,7 @@ header h1 {
 }
 
 .my_name {
-  font-size: 15rem;
+  font-size: 20rem;
   font-weight: 700;
   text-align: center;
   line-height: 80%;
@@ -215,10 +217,44 @@ header h1 {
   margin-right: -130px;
   transition: 2s cubic-bezier(0, 1.24, 1, 1);
   cursor: default;
+  padding-top: 5rem;
 }
 
 .my_name:hover {
   letter-spacing: 165px;
+  color: var(--main-accent-color);
+}
+
+[data-cursor] {
+  width: 20px;
+  height: 20px;
+  border-radius: 5rem;
+  background: var(--main-accent-color);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 50;
+  transition: 0.05s linear;
+}
+
+.cursor-hover--p [data-cursor] {
+  width: 50px;
+  height: 50px;
+  border-radius: 5rem;
+}
+
+#slogan_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slogan {
+}
+
+.slogan p {
+  font-size: 5rem;
+  text-align: center;
 }
 
 .main_left {

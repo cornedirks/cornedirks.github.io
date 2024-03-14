@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@splinetool/runtime": "^1.0.66",
     "atropos": "^2.0.2"
   }
 }
