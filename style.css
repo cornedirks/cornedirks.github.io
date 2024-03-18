@@ -247,6 +247,9 @@ header h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url(/images/other/cubes.png);
+  background-position: center;
+  background-size: 170rem;
 }
 
 .slogan {
