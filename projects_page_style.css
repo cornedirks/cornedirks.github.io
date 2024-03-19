@@ -377,7 +377,8 @@ header {
 .divider {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
   width: 80%;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
