@@ -373,3 +373,11 @@ header {
 .youtube_banners_thumbnail img {
   position: absolute;
 }
+
+.divider {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  font-weight: bold;
+  font-size: xx-large;
+}
