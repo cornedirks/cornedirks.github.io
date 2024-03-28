@@ -167,22 +167,23 @@ footer p {
 }
 
 .content_container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-.content_video_container{   
-    height: 420px;
-    width: 900px;
-    border-radius: 2vh;
-    overflow: hidden;
-    pointer-events: none;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.content_video_container video{
-    object-fit: fit; 
-    position: absolute;
-    bottom: -34%;
+.content_video_container {
+  height: 420px;
+  width: 900px;
+  border-radius: 2vh;
+  overflow: hidden;
+  pointer-events: none;
+  position: relative;
+}
+
+.content_video_container video {
+  object-fit: fit;
+  position: absolute;
+  bottom: -34%;
+  background-color: var(--darker-background-color);
 }
